@@ -2,12 +2,13 @@
 <html>
 <head>
 	<meta charset='UTF-8' />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<title>My Movies - Add Movie</title>
 </head>
 <body>
-	<h1>Add New Movie</h1>
+	<h1 class="alert alert-primary">Add New Movie</h1>
 	<form method="post" action="/movies/create">
-		<table>
+		<table class="table">
 			<tr>
 				<td><label for="title">Title:</label></td>
 				<td><input type="text" name="title"></td>
@@ -21,11 +22,11 @@
 				<td><input type="text" name="year"></td>
 			</tr>
 			<tr>
-				<td><input type="submit"></td>
+				<td><input class="btn btn-success" type="submit"></td>
 			</tr>
 		</table>
 	</form>
-	<a href="/movies">Back to Index</a>
+	<a class="btn btn-primary" href="/movies">Back to Index</a>
 
 </body>
 </html>

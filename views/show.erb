@@ -2,11 +2,12 @@
 <html>
 <head>
 	<meta charset='UTF-8' />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<title>My Movies - <%= @movie.title %></title>
 </head>
 <body>
-	<h1><%= @movie.title %></h1>
-	<table>
+	<h1 class="alert alert-primary"><%= @movie.title %></h1>
+	<table class="table">
 		<tr>
 			<td><strong>Title:</strong></td>
 			<td><%= @movie.title %></td>
@@ -20,7 +21,7 @@
 			<td><%= @movie.year %></td>
 		</tr>
 	</table>
-	<a href="/movies">Back to Index</a>
+	<a class="btn btn-primary" href="/movies">Back to Index</a>
 
 </body>
 </html>
